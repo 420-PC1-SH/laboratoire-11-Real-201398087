@@ -23,4 +23,9 @@ describe("transmission processor", function () {
         expect(typeof result.id).toBe('number')
     });
 
+    test("contien un rawData", function () {
+        let result = processor("9701::<489584872710>");
+        expect(result.id).not.tobe(null)
+    });
+
 });
