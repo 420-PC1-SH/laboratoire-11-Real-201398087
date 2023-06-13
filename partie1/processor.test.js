@@ -20,7 +20,7 @@ describe("transmission processor", function () {
     
     test("returns id is a number", function () {
         let result = processor("9701::<489584872710>");
-        expect(result.id).toBeNumber()
+        expect(typeof result.id).toBe('number')
     });
 
 });
