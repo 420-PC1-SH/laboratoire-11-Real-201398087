@@ -29,7 +29,7 @@ describe("transmission processor", function () {
     });
 
     test("Le rawData debute et termine <>", function () {
-        let result = processor("9701::489584872710>");
+        let result = processor("9701::4895<84872710>");
         expect(result.rawData).toMatch(/^\<(\d*)\>$/);
     });
 
